@@ -3,6 +3,7 @@
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
+// Pujo la web
 Route::get('/', [StudentController::class, 'index'])->name('index');
 Route::get('/create', [StudentController::class, 'create'])->name('create');
 Route::post('/new', [StudentController::class, 'new'])->name('new');
